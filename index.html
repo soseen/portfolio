@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/stars.css">
+    <link rel="stylesheet" href="css/style.css"> 
+     
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <script src="https://kit.fontawesome.com/969f9d12f5.js" crossorigin="anonymous"></script>
+</head>
+<body id="top-of-page" name="top-of-page" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav role="navigation" class="navbar navbar-expand-lg fixed-top">
+        <a class="navbar-brand" href="#top-of-pgae"><img src="img/logo-ps.svg" class="logo-nav" alt="logo-ps" onmouseover="this.src='img/logo-ps-highlight.svg'" onmouseout="this.src='img/logo-ps.svg'"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+                <i class="fas fa-bars"></i>
+            </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent" data-toggle="dropdown">
+            <ul class="navbar-nav  ml-auto">
+                <li class="nav-item">
+                    <a href="#about" data-toggle="tab" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>        
+    </nav>
+
+    <section id="landing">
+        <!-- <div class="stars-container">
+            <div class="star" id="stars"></div>
+            <div class="star" id="stars2"></div>
+            <div class="star" id="stars3"></div>
+        </div> -->
+        <div class="landing-container row">
+            <div class="landing-left col-md-6 ">
+                <h1 class="text-1">Przemysław Sosnowski</h1>
+                <h4 class="text-2">Junior Front-End Developer</h4>
+            </div>
+            <div class="landing-right col-md-6">
+                <img src="img/logo-ps.svg" class="logo-ps" alt="logo-ps-big" height="300" width="300">
+            </div>
+        </div>
+        <div class="row">
+                <a href="#about" class="btn btn-1";>See More</a>
+        </div>
+    </section>
+    
+
+    <section id="about" name="about">
+        <div class="container-fluid">
+            <div class="about-me">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="about-photo d-none d-sm-block">
+                            <img src="img/ps-1.png" alt="ps">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="about-description col-md-7">
+                        <h2 class="about-header">About Me</h1>
+                        <p class="par-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, deserunt blanditiis excepturi iste ad 
+                            aliquid nostrum id distinctio vero corporis saepe placeat officia quas, cupiditate dolorum consequuntur odio reprehenderit repellendus. 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, nihil iste, illo enim nesciunt aliquid eum quisquam labore dolorem molestiae repellat earum laboriosam odio, perspiciatis omnis expedita possimus quibusdam alias. </p>
+                        <p class="par-2">Learn more about me</p>
+                        <button class="btn">Check Resume</button>
+                        <hr class="line">
+                        <ul class="about-links">
+                            <li><a href="https://linkedin.com/in/przemek-sosnowski-763875188" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="https://github.com/soseen" target="_blank"><i class="fab fa-github"></i></a></li>
+                            <li><a href="https://facebook.com/przemek.sosnowski.90" target="_blank"><i class="fab fa-facebook"></i></a></li>                 
+                        </ul>
+
+                    </div>    
+                </div>  
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" name="skills">
+        <div class="container-fluid">
+            <h1 class="skills-header">My Skills</h1>
+            <div class="skills-container">
+                <div class="row">
+                    <div class="card-container col-lg-4 col-md-6 col-sm-12">
+                        <div class="card">
+                            <i class="fab fa-html5"></i>
+                            <h3>HTML5</h3>
+                        </div>
+                        <div class="card-back">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star star-empty"></i>
+                        </div>
+                    </div>
+                    <div class="card-container col-lg-4 col-md-6 col-sm-12">
+                        <div class="card">
+                            <i class="fab fa-css3"></i>
+                            <h3>CSS3</h3>
+                        </div>
+                        <div class="card-back">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star star-empty"></i>
+                        </div>
+                    </div>
+                    <div class="card-container col-lg-4 col-md-6 col-sm-12">
+                        <div class="card">
+                            <i class="fab fa-js"></i>
+                            <h3>Javascript</h3>
+                        </div>
+                        <div class="card-back">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star star-empty"></i>
+                        </div>
+                    </div>
+                    <div class="card-container col-lg-4 col-md-6 col-sm-12">
+                        <div class="card">
+                            <i class="fab fa-react"></i>
+                            <h3>React</h3>  
+                        </div>
+                        <div class="card-back">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star star-empty"></i>
+                            <i class="fas fa-star star-empty"></i>
+                        </div>
+                    </div>
+                    <div class="card-container col-lg-4 col-md-6 col-sm-12">
+                        <div class="card">
+                            <i class="fab fa-git"></i>
+                            <h3>GIT</h3>
+                        </div>
+                        <div class="card-back">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star star-empty"></i>
+                            <i class="fas fa-star star-empty"></i>
+                        </div>
+                    </div>
+                    <div class="card-container col-lg-4 col-md-6 col-sm-12">
+                        <div class="card">
+                            <i class="fab fa-sass"></i>
+                        </div>
+                        <div class="card-back">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star star-empty"></i>
+                            <i class="fas fa-star star-empty"></i>
+                            <i class="fas fa-star star-empty"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
