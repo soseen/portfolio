@@ -25,3 +25,4 @@ function changeNavbarColor(isBackgroundBlack){
     console.log(Boolean(blackBackground));
     return blackBackground;
 }
+

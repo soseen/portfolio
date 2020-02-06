@@ -13,18 +13,18 @@ html {
   }
 
   ::-webkit-scrollbar {
-    background-color: black;
+    background-color: #2d2d2d;
     width: 10px;
   }
   
   /* Track */
   ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px black; 
+    box-shadow: inset 0 0 0px #2d2d2d; 
     border-radius: 25px;
   }
 
 ::-webkit-scrollbar-thumb {
-    background: #ecc99b; 
+    background: black; 
     border-radius: 25px;
 }
 
@@ -281,6 +281,7 @@ overflow: hidden;
 
 .about-me .about-photo {
     position: relative;
+    width: 600px;
 }
 .about-me .about-photo img{
     width: 100%;
@@ -297,7 +298,6 @@ overflow: hidden;
     padding-top: 250px;
     padding-bottom: 200px;
     text-align: center;
-
 }
 
 .skills-header {
@@ -315,14 +315,10 @@ overflow: hidden;
 
 .skills-container .row {
     margin: auto;
-    display: flex;
-    justify-content: center;
     width: 70%;
 }
 
 .skills-container .row .card-container {
-    display: flex;
-    justify-content: space-around;
     margin-bottom: 70px;
     width: 300px;
     height: 350px;
@@ -363,7 +359,6 @@ overflow: hidden;
 }
 
 .skills-container .row .card-container .card-back i{
-    display: inline-block;
     font-size: 45px;
     color: goldenrod;
 }
@@ -385,7 +380,6 @@ overflow: hidden;
 
 .skills-container .row .card-container .card i {
     font-size: 150px;
-    text-align: center;
     color: #ecc99b;
 }
 
@@ -401,7 +395,70 @@ overflow: hidden;
     cursor: pointer;
   }
 
+#projects{
+    background-color: #ecc99b;
+    padding-top: 100px;
+    padding-bottom: 550px;
+    text-align: center;
+    color: #2D2D2D;
+}
+
+.projects-header {
+    margin: auto;
+    font-weight: 600;
+    margin-top: 50px;
+    margin-bottom: 200px;
+    font-size: 90px;
+}
+
+.projects-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.projects-list div {
+    width: 350px;
+    height: 450px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(90deg, #1b1b1b, #222, #1b1b1b);
+    border-radius: 4px;
+    transition: transform 1s, opacity 1s;
+}
+
+.projects-list div i {
+    font-size: 70px;
+    color: white;
+}
+
+.projects-list div h3 {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.projects-list .active-element {
+    opacity: 1;
+}
+
+.projects-list .prev-element,
+.projects-list .next-element {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.projects-list .prev-element {
+    transform: translateX(-280px) scale(.75) perspective(250px) rotateY(-10deg);
+    transition: opacity .5s, transform .5s
+}
+
+.projects-list .next-element {
+    transform: translateX(280px) scale(.75) perspective(250px) rotateY(10deg);
+    transition: opacity .5s, transform .5s
+}
 
 
-
-  
