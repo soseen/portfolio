@@ -301,10 +301,16 @@ overflow: hidden;
 }
 
 .skills-header {
-    margin: auto;
     font-weight: 600;
-    margin-top: 200px;
+    margin-top: 280px;
     margin-bottom: 200px;
+    font-size: 90px;
+    color: #ecc99b;
+}
+
+.other-skills-header {
+    font-weight: 600;
+    margin-bottom: 100px;
     font-size: 90px;
     color: #ecc99b;
 }
@@ -359,7 +365,7 @@ overflow: hidden;
 }
 
 .skills-container .row .card-container .card-back i{
-    font-size: 45px;
+    font-size: 40px;
     color: goldenrod;
 }
 
@@ -418,47 +424,88 @@ overflow: hidden;
     margin-bottom: 10px;
 }
 
-.projects-list div {
+.projects-list .prev-element,
+.projects-list .active-element,
+.projects-list .next-element {
     width: 350px;
     height: 450px;
     position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     background: linear-gradient(90deg, #1b1b1b, #222, #1b1b1b);
     border-radius: 4px;
     transition: transform 1s, opacity 1s;
+    overflow: hidden;
 }
 
-.projects-list div i {
-    font-size: 70px;
+.projects-list div .buttons-container {
+    margin: auto;
+    position: relative;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.projects-list div .buttons-container .button{
+    position: relative;
+}
+
+.projects-list div .buttons-container .button a i {
+    font-size: 50px;
+    margin-top: 30px;
+    color: white;
+}
+
+.projects-list div .buttons-container .button a i:hover {
+    color: #ecc99b;
+}
+
+
+.projects-list div .buttons-container .button p {
+    font-size: 20px;
+    margin-top: 10px;
     color: white;
 }
 
 .projects-list div h3 {
+    margin-top: 25px;
     color: white;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 500;
 }
 
 .projects-list .active-element {
     opacity: 1;
+    transition: transform 0.2s;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.5) !important;
 }
+
+/* .projects-list .active-element:hover {
+    transform: scale(1.1);
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.5) !important;
+} */
 
 .projects-list .prev-element,
 .projects-list .next-element {
-    opacity: 0.8;
     cursor: pointer;
+    box-shadow: 0 30px 15px rgba(0, 0, 0, 0.5) !important;
 }
 
 .projects-list .prev-element {
-    transform: translateX(-280px) scale(.75) perspective(250px) rotateY(-10deg);
+    transform: translateX(-325px) scale(.75) perspective(250px) rotateY(-10deg);
     transition: opacity .5s, transform .5s
 }
 
 .projects-list .next-element {
-    transform: translateX(280px) scale(.75) perspective(250px) rotateY(10deg);
+    transform: translateX(325px) scale(.75) perspective(250px) rotateY(10deg);
     transition: opacity .5s, transform .5s
+}
+
+.projects-list div img {
+    margin: auto;
+    width: 90%;
+    height: 200px;
+    margin-top: 30px;
+    border: 2px solid white;
 }
 
 
