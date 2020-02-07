@@ -4,7 +4,11 @@
 
 body {
     font-family: tahoma;
-	text-align: justify;
+    text-align: justify;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
 }
 
 
@@ -303,14 +307,15 @@ overflow: hidden;
 .skills-header {
     font-weight: 600;
     margin-top: 280px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     font-size: 90px;
     color: #ecc99b;
 }
 
 .other-skills-header {
     font-weight: 600;
-    margin-bottom: 100px;
+    margin-top: 40px;
+    margin-bottom: 80px;
     font-size: 90px;
     color: #ecc99b;
 }
@@ -326,17 +331,19 @@ overflow: hidden;
 
 .skills-container .row .card-container {
     margin-bottom: 70px;
-    width: 300px;
+    display: flex;
+    justify-content: center;
     height: 350px;
 }
 
 .skills-container .row .card-container .card{
-    position: absolute;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 250px;
     height: 100%;
+    margin-top: 10px;
     background: linear-gradient(90deg, #1b1b1b, #222, #1b1b1b);
     border-radius: 4px;
     box-shadow: 30px 15px 15px rgba(0, 0, 0, 0.5);
@@ -354,8 +361,8 @@ overflow: hidden;
     border-radius: 4px;
     box-shadow: 30px 15px 15px rgba(0, 0, 0, 0.5);
     text-align: center;
+    width: 270px;
     height: 100%;
-    width: 80%;
     transform: perspective(600px) rotateY(180deg);
     transition: transform;
     cursor: pointer;
@@ -475,7 +482,7 @@ overflow: hidden;
 
 .projects-list .active-element {
     opacity: 1;
-    transition: transform 0.2s;
+    transition: transform 1s;
     box-shadow: 0 15px 15px rgba(0, 0, 0, 0.5) !important;
 }
 
