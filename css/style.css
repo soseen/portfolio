@@ -14,7 +14,7 @@ body {
 
 html {
     scroll-behavior: smooth;
-    width: 100%;
+        width: 100%;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
@@ -415,7 +415,7 @@ overflow: hidden;
 #projects{
     background-color: #ecc99b;
     padding-top: 100px;
-    padding-bottom: 550px;
+    padding-bottom: 250px;
     text-align: center;
     color: #2D2D2D;
     overflow: hidden;
@@ -433,10 +433,12 @@ overflow: hidden;
     margin: auto;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 10px;
     margin-bottom: 10px;
     height: 450px;
     width: 70%;
+    overflow: hidden;
 }
 
 .projects-list .prev-element,
@@ -444,7 +446,6 @@ overflow: hidden;
 .projects-list .next-element {
     width: 300px;
     height: 350px;
-    position: absolute;
     display: flex;
     flex-direction: column;
     background: linear-gradient(90deg, #1b1b1b, #222, #1b1b1b);
@@ -508,12 +509,12 @@ overflow: hidden;
 }
 
 .projects-list .prev-element {
-    transform: translateX(-280px) scale(.75) perspective(250px) rotateY(-10deg);
+    transform: translateX(15px) scale(.75) perspective(250px) rotateY(-10deg);
     transition: opacity .5s, transform .5s
 }
 
 .projects-list .next-element {
-    transform: translateX(280px) scale(.75) perspective(250px) rotateY(10deg);
+    transform: translateX(-15px) scale(.75) perspective(250px) rotateY(10deg);
     transition: opacity .5s, transform .5s
 }
 
