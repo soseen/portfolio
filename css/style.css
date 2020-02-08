@@ -9,12 +9,13 @@ body {
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
+    position: relative;
 }
 
 
 html {
     scroll-behavior: smooth;
-        width: 100%;
+    width: 100%;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
@@ -99,18 +100,15 @@ nav .navbar-nav li a:hover {
 }
 
 .stars-container {
-position: absolute;
-height: 85%;
-width: 100%;
+position: relative;
 z-index: 0;
-overflow: hidden;
+margin: auto;
 }
 
 .landing-container {
     display: flex;
-    flex-direction: row;
     border: 5px solid white;
-    width: 70%;
+    width: 80%;
     margin: auto;
     margin-top: 100px;
     background-color: black;
@@ -130,11 +128,9 @@ overflow: hidden;
 }
 
 
-.landing-left * {
-    align-items: center;
-}
 
 .landing-right {
+    height: 360px;
     display: flex;
     justify-content: center;
     margin: 5% 0;
@@ -142,19 +138,22 @@ overflow: hidden;
 }
 
 .landing-right img{
-
-    height: 300px;
+    height: 80%;
     width: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.text-1 {
-    color: white;
+.landing-left .text-1 {
+    font-size: 31px;
     position: relative;
-    background: black;
+    color: white;
     animation: text 2s ease-in;
+    background-color: black;
 }
 
 .text-2 {
+    font-size: 20px;
     color: #077a91;
     animation: pop-text 2s;
     animation-delay: 2s;
@@ -289,13 +288,15 @@ overflow: hidden;
 }
 
 .about-me .about-photo {
-    position: relative;
     width: 500px;
     margin: auto;
+    display: flex;
+    justify-content: center;
 }
 .about-me .about-photo img{
-    width: 100%;
+    width: 90%;
     height: auto;
+    margin: auto;
     /* max-height: 1000px;
     width: auto; */
 }
