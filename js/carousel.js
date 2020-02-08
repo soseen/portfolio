@@ -3,13 +3,10 @@ $(document).on('click', '.next-element', (function() {
 
     let slider = $(".projects-list");
     var contentPrev =  $(".prev-element").html();
-
-        /* Next slide */
-        
+  
     
-            $(".prev-element").remove();  
-            /* Step */
-            
+            $(".prev-element").remove(); 
+             
             $(".active-element").addClass("prev-element");
             $(".active-element").removeClass("active-element");
         
