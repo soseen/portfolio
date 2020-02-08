@@ -444,6 +444,7 @@ overflow: hidden;
 .projects-list .prev-element,
 .projects-list .active-element,
 .projects-list .next-element {
+    position: absolute;
     width: 300px;
     height: 350px;
     display: flex;
@@ -464,9 +465,6 @@ overflow: hidden;
     justify-content: space-around;
 }
 
-.projects-list div .buttons-container .button{
-    position: relative;
-}
 
 .projects-list div .buttons-container .button a i {
     font-size: 50px;
@@ -497,11 +495,6 @@ overflow: hidden;
     box-shadow: 0 15px 15px rgba(0, 0, 0, 0.5) !important;
 }
 
-/* .projects-list .active-element:hover {
-    transform: scale(1.1);
-    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.5) !important;
-} */
-
 .projects-list .prev-element,
 .projects-list .next-element {
     cursor: pointer;
@@ -509,12 +502,12 @@ overflow: hidden;
 }
 
 .projects-list .prev-element {
-    transform: translateX(15px) scale(.75) perspective(250px) rotateY(-10deg);
+    transform: translateX(-280px) scale(.75) perspective(250px) rotateY(-10deg);
     transition: opacity .5s, transform .5s
 }
 
 .projects-list .next-element {
-    transform: translateX(-15px) scale(.75) perspective(250px) rotateY(10deg);
+    transform: translateX(280px) scale(.75) perspective(250px) rotateY(10deg);
     transition: opacity .5s, transform .5s
 }
 
