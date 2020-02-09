@@ -354,27 +354,27 @@ margin: auto;
     border-radius: 4px;
     box-shadow: 30px 15px 15px rgba(0, 0, 0, 0.5);
     backface-visibility: hidden;
-    transform: perspective(600px) rotateY(0deg);
+    transform: rotateY(0deg);
     transition: transform;
     cursor: pointer;
 }
 
 .skills-container .row .card-container .card-back {
     position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     backface-visibility: hidden;
     color: white;
     background: linear-gradient(90deg, #1b1b1b, #222, #1b1b1b);
     border-radius: 4px;
     box-shadow: 30px 15px 15px rgba(0, 0, 0, 0.5);
     text-align: center;
-    width: 270px;
+    width: 250px;
     height: 100%;
-    transform: perspective(600px) rotateY(180deg);
+    transform: rotateY(180deg);
     transition: transform;
     cursor: pointer;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
 
 .skills-container .row .card-container .card-back i{
@@ -403,14 +403,14 @@ margin: auto;
 }
 
 .card-container:hover > .card{
-    transform: perspective(600px) rotateY(-180deg) translateY(-15px) !important;
-    box-shadow: 30px 30px 15px rgba(0, 0, 0, 0.5) !important;
+    transform: rotateY(-180deg) translateY(-15px) !important;
+    box-shadow: 30px 40px 15px rgba(0, 0, 0, 0.5) !important;
     cursor: pointer;
 }
   
 .card-container:hover > .card-back{
-    transform: perspective(600px) rotateY(0deg) translateY(-15px) !important;
-    box-shadow: 30px 30px 15px rgba(0, 0, 0, 0.5) !important;
+    transform: rotateY(0deg) translateY(-15px) !important;
+    box-shadow: 30px 40px 15px rgba(0, 0, 0, 0.5) !important;
     cursor: pointer;
   }
 
@@ -436,9 +436,8 @@ margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 350px;
     margin-bottom: 10px;
-    height: 450px;
     width: 70%;
     overflow: hidden;
 }
@@ -449,22 +448,21 @@ margin: auto;
     position: absolute;
     width: 300px;
     height: 350px;
-    display: flex;
-    flex-direction: column;
-    background: linear-gradient(90deg, #1b1b1b, #222, #1b1b1b);
+    justify-content: flex-start;
+    background: linear-gradient(0deg, #1b1b1b, #222, #1b1b1b);
     border-radius: 4px;
     border: 2px solid #3d3d3d;
-    transition: transform 1s, opacity 1s;
+    transition: transform 0.2s, opacity 1s;
     overflow: hidden;
 }
 
-.projects-list div .buttons-container {
-    margin: auto;
+.buttons-container {
     width: 90%;
-    position: relative;
+    height: 40%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
 }
 
 
@@ -484,11 +482,10 @@ margin: auto;
 }
 
 .projects-list div h3 {
-    margin-top: 10px;
-    margin-bottom: 10px;
     color: white;
     font-size: 25px;
     font-weight: 500;
+    margin-top: 5px;
 }
 
 .projects-list .active-element {
@@ -516,9 +513,68 @@ margin: auto;
 .projects-list div img {
     margin: auto;
     width: 90%;
-    height: 180px;
-    border: 2px solid white;
-    margin-bottom: 15px;
+    height: 160px;
+    border: solid 2px #2d2d2d;
+}
+
+.projects-list div .project-front p {
+    margin: auto;
+    width: 90%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    color: white;
+    background: linear-gradient(90deg, #292929, #222, #292929);
+    border: solid 2px #2d2d2d;
+    overflow: hidden;
 }
 
 
+
+.project-front {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    transform: perspective(600px) rotateY(0deg);
+    transition: transform;
+    cursor: pointer;
+}
+
+.project-back {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    backface-visibility: hidden;
+    transform: perspective(600px) rotateY(180deg);
+    transition: transform;
+    cursor: pointer;
+}
+
+.project-back i {
+    font-size: 140px;
+    margin-top: 40px;
+    color: #ecc99b;
+}
+
+.project-back .fa-react {
+    color: #60DBFB;
+}
+
+
+.active-element:hover > .project-front{
+    transform: perspective(600px) rotateY(-180deg) !important;
+    cursor: pointer;
+}
+  
+.active-element:hover > .project-back{
+    transform: perspective(600px) rotateY(0deg) !important;
+    cursor: pointer;
+  }
