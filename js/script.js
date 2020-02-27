@@ -2,7 +2,7 @@ var blackBackground = false;
 
 
 $(window).scroll(function(){
-	$('nav').toggleClass('black-bg', $(window).scrollTop() > 100);
+    $('nav').toggleClass('black-bg', $(window).scrollTop() > 100);
 });
 
 $('.fa-bars').click(function(){
@@ -14,7 +14,6 @@ function changeNavbarColor(isBackgroundBlack){
         $('nav').css('background', "transparent");
         $('nav').css('border', "unset");
         blackBackground = false;
-        console.log('jestem se tu');
     }
     else {
         $('nav').css('background', "black");
