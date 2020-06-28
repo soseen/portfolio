@@ -339,30 +339,35 @@ nav:hover {
     margin-top: 25px;
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     color: #ecc99b;
+    /* background-color: grey; */
+    
 }
 
-.about-description .hobbies-container .hobbies-card {
+
+.hobbies-card {
     position: relative;
     display: flex;
     width: 100%;
-    margin: 0 10px;
+    /* margin: 0 10px; */
     margin-bottom: 30px;
-    padding: 15px 0;
+    padding: 35px;
     align-items: center;
     justify-content: center;
     border: 2px solid #ecc99b;
     box-shadow: 8px 8px 1px #c74a57;
 }
+
 .hobbies-card-front {
     width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 1.1rem;
 }
 
-.about-description .hobbies-container .hobbies-card .hobbies-desc {
+.hobbies-desc {
     position: absolute;
     display: flex;
     align-items: center;
@@ -379,7 +384,7 @@ nav:hover {
     cursor: pointer;
 }
 
-.about-description .hobbies-container .hobbies-card .hobbies-desc p {
+.hobbies-desc p {
     font-size: 0.7rem;
     margin-left:auto;
     margin-right:auto;
@@ -387,19 +392,17 @@ nav:hover {
     width: 90%; 
 }
 
-.about-description .hobbies-container div:hover > .hobbies-desc {
+.about-description .hobbies-container .row div:hover > .hobbies-desc {
     height: 100%;
     overflow: auto;
 }
 
-.about-description .hobbies-container i {
+.hobbies-card-front i {
     font-size: 3.4rem;
     margin: 18px auto;
 }
 
-.about-description .hobbies-container .hobbies-card-front {
-    font-size: 1.1rem;
-}
+
 
 .about-description .line {
     border: 2px solid #ecc99b;
@@ -1077,21 +1080,24 @@ textarea {
         font-size: 100px;
     }
 
-    .about-description .hobbies-container .hobbies-card .hobbies-desc p {
-        font-size: 0.5rem;
-    }
+
 
     .skills-container .row .card-container .card h3 {
         font-size: 22px;
     }
 
-    .about-description .hobbies-container i {
-        font-size: 2rem;
+    .hobbies-desc p {
+        font-size: 0.9rem;
     }
 
-    .about-description .hobbies-container p {
-        font-size: 0.8rem;
+    .hobbies-card-front i {
+        font-size: 3rem;
     }
+
+    .hobbies-card-front p {
+        font-size: 1.2rem;
+    }
+
 }
 
 
@@ -1129,20 +1135,21 @@ textarea {
         font-size: 10px;
     }
 
-    .about-description .hobbies-container .hobbies-card .hobbies-desc p {
-        font-size: 0.3rem;
-    }
 
     .skills-container .row .card-container .card h3 {
         font-size: 9px;
     }
 
-    .about-description .hobbies-container i {
-        font-size: 2rem;
+    .hobbies-desc p {
+        font-size: 0.65rem;
     }
 
-    .about-description .hobbies-container p {
-        font-size: 0.5rem;
+    .hobbies-card-front i {
+        font-size: 3rem;
+    }
+
+     .hobbies-card-front p {
+        font-size: 1rem;
     }
 
     .contact-container {
