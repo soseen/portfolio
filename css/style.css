@@ -537,7 +537,7 @@ nav:hover {
     position: relative;
     margin: auto;
     border-radius: 5px;
-    width: 80%;
+    width: 90%;
 }
 
 .skills-container .row {
@@ -565,7 +565,7 @@ nav:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 15px;
     background: linear-gradient(90deg, #1b1b1b, #222, #1b1b1b);
     border-radius: 4px;
     box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
@@ -1069,7 +1069,7 @@ textarea {
 @media screen and (max-width: 800px) {
     .skills-container .row .card-container .card,
     .skills-container .row .card-container .card-back {
-        width: 150px;
+        width: 200px;
         height: 250px;
     }
 
@@ -1116,13 +1116,13 @@ textarea {
     .skills-container .row .card-container .card,
     .skills-container .row .card-container .card-back {
         width: 80px;
-        height: 100px;
+        height: 120px;
     }
 
 
     .skills-container .row .card-container .card i 
     {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .skills-container .row .card-container .card-back i{
@@ -1134,7 +1134,7 @@ textarea {
     }
 
     .skills-container .row .card-container .card h3 {
-        font-size: 11px;
+        font-size: 9px;
     }
 
     .about-description .hobbies-container i {
