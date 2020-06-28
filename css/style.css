@@ -352,7 +352,7 @@ nav:hover {
     width: 100%;
     /* margin: 0 10px; */
     margin-bottom: 30px;
-    padding: 35px;
+    padding: 30px;
     align-items: center;
     justify-content: center;
     border: 2px solid #ecc99b;
@@ -360,12 +360,14 @@ nav:hover {
 }
 
 .hobbies-card-front {
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     font-size: 1.1rem;
     white-space: nowrap;
+    margin: 10px 0px;
 }
 
 .hobbies-desc {
@@ -1081,6 +1083,15 @@ textarea {
         font-size: 22px;
     }
 
+    .technologies-container i {
+        font-size: 3rem;
+    }
+
+    .technologies-container img {
+        width: 40px;
+        height: 40px;
+    }
+
     .hobbies-desc p {
         font-size: 0.9rem;
     }
@@ -1133,6 +1144,15 @@ textarea {
 
     .skills-container .row .card-container .card h3 {
         font-size: 0.7rem;
+    }
+
+    .technologies-container i {
+        font-size: 2rem;
+    }
+
+    .technologies-container img {
+        width: 30px;
+        height: 30px;
     }
 
     .hobbies-desc p {
