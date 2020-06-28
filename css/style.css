@@ -533,7 +533,7 @@ nav:hover {
     height: 100%;
     border-radius: 5px;
     background-color: #20202098;
-    box-shadow: 0px 0px 20px #c74a57;
+    box-shadow: 0px 0px 25px #c74a57;
 }
 
 .skills-container {
@@ -541,11 +541,11 @@ nav:hover {
     margin: auto;
     border-radius: 5px;
     width: 90%;
+    padding: 25px 20px;
 }
 
 .skills-container .row {
     margin: auto;
-    border-radius: 5px;
     background-color: #20202090;
     display: flex;
     justify-content: space-evenly;
@@ -555,14 +555,16 @@ nav:hover {
 }
 
 .skills-container .row .card-container {
-    padding: 20px;
     display: flex;
     justify-content: center;
-    /* transition: transform 0.5s; */
+}
+
+.card-col {
+    padding: 0px 15px ;
 }
 
 .skills-container .row .card-container .card{
-    width: 200px;
+    width: 100%;
     height: 300px;
     position: relative;
     display: flex;
@@ -590,7 +592,7 @@ nav:hover {
     border-radius: 4px;
     box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
     text-align: center;
-    width: 200px;
+    width: 100%;
     height: 300px;
     transform: rotateY(180deg);
     /* transition: transform 1s; */
@@ -602,11 +604,6 @@ nav:hover {
     color: gray;
 }
 
-
-/* .skills-container .row .card-container .card:hover {
-    transform: translateY(-15px);
-    box-shadow: 0 30px 35px rgba(0, 0, 0, 0.5);
-} */
 
 .skills-container .row .card-container .card h3 {
     margin-top: 21px;
@@ -628,9 +625,6 @@ nav:hover {
     box-shadow: 15px 30px 15px rgba(0, 0, 0, 0.5) !important;
   }
 
-.card-container:hover {
-    transform: translateY(-12px);
-}
 
 #projects{
     background-color: #191919;
@@ -1121,23 +1115,23 @@ textarea {
 
     .skills-container .row .card-container .card,
     .skills-container .row .card-container .card-back {
-        width: 80px;
+        width: 100%;
         height: 120px;
     }
 
 
     .skills-container .row .card-container .card i 
     {
-        font-size: 25px;
+        font-size: 28px;
     }
 
     .skills-container .row .card-container .card-back i{
-        font-size: 10px;
+        font-size: 15px;
     }
 
 
     .skills-container .row .card-container .card h3 {
-        font-size: 9px;
+        font-size: 0.7rem;
     }
 
     .hobbies-desc p {
