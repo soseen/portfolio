@@ -655,6 +655,12 @@ nav:hover {
     overflow: hidden;
 }
 
+#projects .row {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
 .projects-header,
 .skills-header,
 .contact-header {
@@ -689,9 +695,7 @@ nav:hover {
     flex-direction: column;
     align-items: center;
 }
-.row1, .row2 {
-    width: 90%;
-}
+
 .pseudo-container{
     background-color: #202020;
     width: 100%;
