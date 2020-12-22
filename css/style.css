@@ -577,6 +577,8 @@ nav:hover {
 .skills-container .row .card-container {
     display: flex;
     justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
 .card-col {
@@ -589,15 +591,41 @@ nav:hover {
     position: relative;
     display: flex;
     justify-content: center;
+    overflow: hidden;
     align-items: center;
     margin-top: 15px;
-    background: linear-gradient(90deg, #1b1b1b, #222, #1b1b1b);
+    background: #1b1b1b;
     border-radius: 4px;
+    border: none;
     box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
     backface-visibility: hidden;
     transform: rotateY(0deg);
-    /* transition: transform 1s; */
+    transition: all 0.4s;
     cursor: pointer;
+    /* background: linear-gradient(135deg, #1b1b1b 75%, #c74a57 15%);
+    background: -webkit-linear-gradient(135deg, #1b1b1b 75%, #c74a57 15%);  
+    background: -moz-linear-gradient(135deg, #1b1b1b 75%, #c74a57 15%);  
+    background: -o-linear-gradient(135deg, #1b1b1b 75%, #c74a57 15%);  
+    background: linear-gradient(135deg, #1b1b1b 75%, #c74a57 15%);  
+    -webkit-transition: all 1000ms linear;
+    -ms-transition: all 1000ms linear;
+    transition: all 1000ms linear; */
+}
+.skills-container .row .card-container .card > * {
+    z-index: 15;
+}
+
+.skills-container .row .card-container .card::after {
+    content: '';
+    position: absolute;
+    bottom: -120%;
+    width: 100%;
+    height: 100%;
+    background-color:#c74a57;
+    /* transform: rotate(-45deg); */
+    transform: skewY(135deg);
+    z-index: 3;
+    transition: 0.4s;
 }
 
 .skills-container .row .card-container .card-back {
@@ -608,14 +636,13 @@ nav:hover {
     backface-visibility: hidden;
     font-size: 28px;
     color: goldenrod;
-    background: linear-gradient(90deg, #1b1b1b, #222, #1b1b1b);
+    background: #1b1b1b;
     border-radius: 4px;
     box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
     text-align: center;
     width: 100%;
     height: 300px;
     transform: rotateY(180deg);
-    /* transition: transform 1s; */
     cursor: pointer;
 }
 
@@ -636,14 +663,24 @@ nav:hover {
 }
 
 .card-container:hover > .card{
-    transform: rotateY(-180deg) !important;
-    box-shadow: 15px 30px 15px rgba(0, 0, 0, 0.5) !important;
+    /* transform: rotateY(-180deg) !important;
+    box-shadow: 15px 30px 15px rgba(0, 0, 0, 0.5) !important; */
 }
   
 .card-container:hover > .card-back{
-    transform: rotateY(0deg) !important;
-    box-shadow: 15px 30px 15px rgba(0, 0, 0, 0.5) !important;
+    /* transform: rotateY(0deg) !important;
+    box-shadow: 15px 30px 15px rgba(0, 0, 0, 0.5) !important; */
   }
+
+  /* .skills-container .row .card:hover {
+    background: linear-gradient(135deg, #1b1b1b 25%, #c74a57 25%);
+} */
+
+.skills-container .row .card-container .card:hover::after {
+    transform: skewY(225deg);
+    bottom: 0%;
+    /* height: 120%; */
+}
 
 
 #projects{
