@@ -470,6 +470,9 @@ nav:hover {
     margin-right: 10px;
     font-size: 22px;
     color: #ecc99b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: all .3s;
 }
 
@@ -982,19 +985,13 @@ nav:hover {
     overflow: hidden;
 }
 
-
-.pseudo-contact {
-    width: 100%;
-    padding: 0 25px;
-}
-
 .contact-container {
-    max-width: 800px;
+    max-width: 900px;
     padding: 0 35px;
     margin: auto;
-    background-color: #292929;
-    box-shadow: 7px 7px 1px #c74a57;
-    margin-bottom: 60px;
+    /* background-color: #292929; */
+    border-radius: 2px;
+    margin-bottom: 10px;
     font-size: 0.9rem;
 }
 
@@ -1003,11 +1000,10 @@ nav:hover {
     color: #ecc99b;
     text-transform: uppercase;
     font-weight: bolder;
-    text-shadow: 1px 1px #c74a57;
 }
 
 .contact-form {
-    padding: 40px 0;
+    padding: 30px 0;
 }
 
 .form-input {
@@ -1037,11 +1033,10 @@ textarea {
 
 .form-button {
     color: #2D2D2D !important;
-    width: 100%;
     background-color: #ecc99b;
     border: 2px solid #ecc99b;
     transition: all 0.1s ease-in-out 0s;
-    padding: 10px 70px;
+    padding: 10px 90px;
     font-weight: bolder;
     margin-top: 30px;
 }
@@ -1069,7 +1064,7 @@ textarea {
 
   .status {
       width: 100%;
-      height: 100px;
+      min-height: 50px;
       margin: auto;
       font-size: 0.8rem;
       font-weight: bolder;
@@ -1112,7 +1107,8 @@ textarea {
 
     
     #projects,
-    #skills {
+    #skills,
+    #contact {
         padding: 10px;
     }
 
@@ -1127,6 +1123,12 @@ textarea {
 
     .about-description .line {
         margin-top: 30px;
+    }
+
+    .about-description .about-links li a i {
+        font-size: 12px;
+        width: 30px;
+        height: 30px;
     }
 
     .projects-header, .skills-header, .contact-header {
@@ -1172,7 +1174,8 @@ textarea {
     }
 
     #projects,
-    #skills {
+    #skills,
+    #contact {
         padding: 10px;
     }
 
