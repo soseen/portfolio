@@ -101,7 +101,7 @@ nav:hover {
     overflow: hidden;
     display: flex;
     justify-content: center;
-    min-height: 1000px;
+    min-height: 900px;
 }
 
 #landing::before {
@@ -160,7 +160,7 @@ nav:hover {
     text-transform: uppercase;
     font-weight: 800;
     color: white;
-    font-size: 4rem;
+    font-size: 3rem;
     -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
     -moz-animation: neon1 1.5s ease-in-out infinite alternate;
     animation: neon1 1.5s ease-in-out infinite alternate;
@@ -338,6 +338,10 @@ nav:hover {
     
 }
 
+.hobbies-container .row {
+    width: 100%;
+}
+
 
 .hobbies-card {
     position: relative;
@@ -381,7 +385,7 @@ nav:hover {
 }
 
 .hobbies-desc p {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     margin-left:auto;
     margin-right:auto;
     text-align:center;
@@ -501,9 +505,11 @@ nav:hover {
     background-position-x: center;
     background-size: cover; */
     position: relative;
-    padding-top: 250px;
+    padding: 40px;
+    padding-top: 350px;
     padding-bottom: 200px;
     text-align: center;
+
 }
 
 
@@ -522,18 +528,10 @@ nav:hover {
 }
 
 
-.skills-header {
-    font-weight: 600;
-    margin-top: 180px;
-    margin-bottom: 100px;
-    font-size: 90px;
-    color: #ecc99b;
-}
-
 .other-skills-header {
     font-weight: 600;
     margin: 40px;
-    font-size: 40px;
+    font-size: 2rem;
     color: #ecc99b;
 }
 
@@ -545,8 +543,6 @@ nav:hover {
     width: 100%;
     height: 100%;
     border-radius: 5px;
-    background-color: #20202098;
-    box-shadow: 0px 0px 25px #c74a57;
 }
 
 .skills-container {
@@ -554,7 +550,6 @@ nav:hover {
     margin: auto;
     border-radius: 5px;
     width: 90%;
-    padding: 25px 20px;
 }
 
 .skills-container .row {
@@ -562,9 +557,6 @@ nav:hover {
     background-color: #20202090;
     display: flex;
     justify-content: space-evenly;
-    /* background-image: url('../img/rob.jpg');
-    background-position: center;
-    background-position: center; */
 }
 
 .skills-container .row .card-container {
@@ -586,11 +578,11 @@ nav:hover {
     justify-content: center;
     overflow: hidden;
     align-items: center;
-    margin-top: 15px;
+    margin-top: 20px;
     background: #1b1b1b;
     border-radius: 4px;
     border: none;
-    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
     backface-visibility: hidden;
     transform: rotateY(0deg);
     transition: all 0.4s;
@@ -655,20 +647,6 @@ nav:hover {
     color: #ecc99b;
 }
 
-.card-container:hover > .card{
-    /* transform: rotateY(-180deg) !important;
-    box-shadow: 15px 30px 15px rgba(0, 0, 0, 0.5) !important; */
-}
-  
-.card-container:hover > .card-back{
-    /* transform: rotateY(0deg) !important;
-    box-shadow: 15px 30px 15px rgba(0, 0, 0, 0.5) !important; */
-  }
-
-  /* .skills-container .row .card:hover {
-    background: linear-gradient(135deg, #1b1b1b 25%, #c74a57 25%);
-} */
-
 .skills-container .row .card-container .card:hover::after {
     transform: skewY(225deg);
     bottom: 0%;
@@ -679,8 +657,7 @@ nav:hover {
 #projects{
     background-color: #191919;
     width: 100%;
-    padding-top: 100px;
-    padding-bottom: 250px;
+    padding: 40px;
     text-align: center;
     overflow: hidden;
 }
@@ -697,9 +674,8 @@ nav:hover {
     position: relative;
     text-align: left;
     font-weight: 600;
-    margin: 100px auto;
-    margin-left: 10%;
-    font-size: 40px;
+    margin: 40px auto;
+    font-size: 2rem;
     color: #ecc99b;
 }
 
@@ -727,7 +703,7 @@ nav:hover {
 }
 
 .pseudo-container{
-    background-color: #202020;
+
     width: 100%;
     height: 100%;
     position: absolute;
@@ -779,7 +755,7 @@ nav:hover {
     left: 50%;
     transform: translateX(-50%);
     width: 80%;
-    height: 50%;
+    height: 60%;
     box-shadow: 0 0 25px #c74a57;
     transition: all 0.5s;
     z-index: -1;
@@ -859,6 +835,11 @@ nav:hover {
     font-size: 3rem;
 }
 
+.project-link i:hover {
+    color: #f37d89;
+    text-shadow: 0px 0px 5px #ee143f;
+}
+
 .project-tech-container {
     position: relative;
     top: 0;
@@ -881,34 +862,32 @@ nav:hover {
 
 .technologies-container {
     display: flex;
-    padding: 10px;
-    font-size: 4rem;
     justify-content: center;
-    background-color: #202020;
-    box-shadow: 4px 3px 0 #f35a69;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 10px;
+    width: 100%;
+
 }
 
-.technologies-container i,
-.technologies-container img {
-    margin: auto 20px;
+.technology-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    min-width: 60px;
+    margin-right: 8px;
+    margin-bottom: 5px;
+    background-color: #c74a57;
+    box-shadow: 3px 3px 10px #141414;
+    color: #fff;
 }
 
-.project-link i:hover {
-    color: #f37d89;
-    text-shadow: 0px 0px 5px #ee143f;
+.technology-wrapper p {
+    margin: 0;
+    font-size: 0.7rem;
 }
 
-.technologies-container .fa-react {
-    color: #00D8FF;
-}
-
-.technologies-container .fa-sass {
-    color: #C66395;
-}
-
-.technologies-container .fa-bootstrap {
-    color: #543B79;
-}
 
 .project-top {
     width: 100%;
@@ -917,7 +896,6 @@ nav:hover {
     z-index: 2;
     overflow: hidden;
     background-color: #1c1c1c;
-    opacity: 1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -938,13 +916,14 @@ nav:hover {
 
 
 .project-bottom {
-    margin: auto;
-    width: 80%;
+    width: 100%;
     height: 40%;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 2;
+    background-color: #1c1c1c;
 }
 
 .project-bottom p {
@@ -998,7 +977,7 @@ nav:hover {
     background-color: #161616;
     position: relative;
     width: 100%;
-    padding: 40px 0;
+    padding: 40px;
     text-align: center;
     overflow: hidden;
 }
@@ -1123,8 +1102,40 @@ textarea {
         font-size: 14px;
     }
 
+    .about-description .par-2 {
+        margin-top: 20px;
+    }
+
     #landing {
         min-height: 600px;
+    }
+
+    
+    #projects,
+    #skills {
+        padding: 10px;
+    }
+
+    #skills {
+        padding-top: 200px;
+        padding-bottom: 50px;
+    }
+
+    .about-description .about-header {
+        margin-top: 40px;
+    }
+
+    .about-description .line {
+        margin-top: 30px;
+    }
+
+    .projects-header, .skills-header, .contact-header {
+        margin: 50px 10%;
+    }
+
+    #skills {
+        padding-top: 200px;
+        padding-bottom: 100px;
     }
 
     .skills-container .row .card-container .card,
@@ -1137,52 +1148,41 @@ textarea {
         font-size: 100px;
     }
 
-
-
     .skills-container .row .card-container .card h3 {
-        font-size: 22px;
+        font-size: 12px;
     }
 
-    .technologies-container i {
-        font-size: 3rem;
-    }
 
     .technologies-container img {
         width: 40px;
         height: 40px;
     }
 
-    .hobbies-desc p {
-        font-size: 0.9rem;
-    }
-
-    .hobbies-card-front i {
-        font-size: 2rem;
-    }
-
-    .hobbies-card-front p {
-        font-size: 1.2rem;
-    }
-
 }
 
 
 @media screen and (max-width: 600px) {
+    
+    html {
+        font-size: 10px;
+    }
+
+    #landing {
+        min-height: 350px;
+    }
+
+    #projects,
+    #skills {
+        padding: 10px;
+    }
+
+    #skills {
+        padding-top: 200px;
+        padding-bottom: 50px;
+    }
+
     .name {
         font-size: 2rem;
-    }
-    .subname {
-        font-size: 1rem;
-    }
-
-    .projects-header,
-    .skills-header,
-    .contact-header {
-        font-size: 1.8rem;
-    }
-
-    .other-skills-header {
-        font-size: 1.8rem;
     }
 
     .skills-container .row .card-container .card,
@@ -1190,7 +1190,6 @@ textarea {
         width: 100%;
         height: 120px;
     }
-
 
     .skills-container .row .card-container .card i 
     {
@@ -1201,37 +1200,15 @@ textarea {
         font-size: 15px;
     }
 
-
-    .skills-container .row .card-container .card h3 {
-        font-size: 0.7rem;
-    }
-
-    .technologies-container i {
-        font-size: 2rem;
-    }
-
     .technologies-container img {
         width: 30px;
         height: 30px;
     }
 
-    .hobbies-desc p {
-        font-size: 0.65rem;
-    }
-
-    .hobbies-card-front i {
-        font-size: 3rem;
-    }
-
-     .hobbies-card-front p {
-        font-size: 1rem;
-    }
-
-    .contact-container {
-        font-size: 0.8rem;
-    }
-
-    .contact-me {
-        font-size: 1.2rem;
+    
+    .project-img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
     }
 } 
