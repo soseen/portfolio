@@ -96,9 +96,10 @@ nav:hover {
     display: flex;
     justify-content: center;
     min-height: 900px;
+    background-color: #111;
 }
 
-#landing::before {
+/* #landing::before {
     content: '';
     position: absolute;
     background: url(../img/glow.png);
@@ -109,7 +110,7 @@ nav:hover {
     height: 100%;
     top:0;
     right:0;
-}
+} */
 
 /* #landing::after {
     content: "";
