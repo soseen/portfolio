@@ -79,12 +79,12 @@ nav .navbar-nav li a:hover {
 }
 
 nav:hover {
-    background: #000;
+    background: #00000099;
     border-bottom: 2px solid white;
 }
 
 .navbar.black-bg{
-    background:#000;
+    background:#111111;
     border-bottom: 2px solid white;
   }
 
@@ -92,7 +92,7 @@ nav:hover {
     /* background: rgb(255,255,255);
     background: linear-gradient(0deg, rgba(255,255,255,1) 10%, rgba(136,136,136,1) 40%, rgba(0,0,0,1) 90%); */
     width: 100%;
-    background: url(../img/glow1.png);
+    background: url(../img/glow.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
