@@ -89,8 +89,6 @@ nav:hover {
   }
 
 #landing {
-    /* background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 10%, rgba(136,136,136,1) 40%, rgba(0,0,0,1) 90%); */
     width: 100%;
     position: relative; 
 	z-index: 1;
@@ -103,10 +101,6 @@ nav:hover {
 #landing::before {
     content: '';
     position: absolute;
-    /* background: url(../img/abstract.jpg);
-    background-repeat: no-repeat;
-    background-size: cover; */
-    /* background-color: #ffffff80; */
     background: url(../img/glow.png);
     background-repeat: no-repeat;
     background-size: cover;
