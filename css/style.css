@@ -117,7 +117,7 @@ nav:hover {
     right:0;
 }
 
-#landing::after {
+/* #landing::after {
     content: "";
     position: absolute;    
     background-image: url(../img/wave-bot.png);   
@@ -128,7 +128,7 @@ nav:hover {
     width: 100%;
     height: 100%;
     z-index: 10;
-}
+} */
 
 
 .landing-container {
