@@ -99,7 +99,7 @@ nav:hover {
     background-color: #111;
 }
 
-/* #landing::before {
+#landing::before {
     content: '';
     position: absolute;
     background: url(../img/glow.png);
@@ -110,7 +110,7 @@ nav:hover {
     height: 100%;
     top:0;
     right:0;
-} */
+}
 
 #landing::after {
     content: "";
