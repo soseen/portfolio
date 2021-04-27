@@ -150,15 +150,15 @@ nav:hover {
 
 
 .name {
-    font-family: 'Nixie One', cursive;
-    text-transform: uppercase;
+    /* font-family: 'Nixie One', cursive;
+    text-transform: uppercase; */
     font-weight: 800;
     color: white;
     font-size: 3rem;
-    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+    /* -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
     -moz-animation: neon1 1.5s ease-in-out infinite alternate;
     animation: neon1 1.5s ease-in-out infinite alternate;
-    text-align: left;
+    text-align: left; */
 }
 
 .name::after {
