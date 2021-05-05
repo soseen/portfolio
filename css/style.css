@@ -1153,11 +1153,6 @@ textarea {
     .about-description .par-2 {
         margin-top: 20px;
     }
-
-    .landing-container {
-        min-height: 600px;
-    }
-
     
     #projects,
     #skills,
@@ -1231,14 +1226,17 @@ textarea {
         height: 30px;
     }
 
-    .landing-container {
-        min-height: 350px;
-    }
-
     .landing-button-container {
         margin-left: 15px;
     }
 
+    .landing-container {
+        min-height: 550px;
+    }
+
+    .landing-container::after {
+        background-position: center;
+    }
 
     .landing-button {
         padding: 5px 15px;
