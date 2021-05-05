@@ -1230,10 +1230,6 @@ textarea {
         margin-left: 15px;
     }
 
-    .landing-container {
-        min-height: 100vh;
-    }
-
     .landing-container::after {
         background-position: center;
     }
