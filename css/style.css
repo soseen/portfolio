@@ -43,7 +43,7 @@ nav {
     font-size: 20px;
     font-weight: 500;
     background-color: none;
-    background-color: #00000080;
+    background-color: transparent;
 }
 
 nav .navbar-nav li a {
@@ -79,7 +79,7 @@ nav .navbar-nav li a:hover {
 }
 
 nav:hover {
-    background: #00000099;
+    background: #111111;
     border-bottom: 2px solid white;
 }
 
@@ -89,82 +89,129 @@ nav:hover {
   }
 
 #landing {
-    /* background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 10%, rgba(136,136,136,1) 40%, rgba(0,0,0,1) 90%); */
     width: 100%;
-    background: url(../img/glow.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    top:0;right:0;bottom:0;left:0;  
-	z-index: 1;
+    height: 100%;
+    position: relative; 
+	z-index: 10;
     overflow: hidden;
     display: flex;
     justify-content: center;
-    min-height: 900px;
+    height: 100%;
+    background-color: #111111;
+
 }
 
-#landing::before {
+
+/* #landing::after {
     content: '';
     position: absolute;
-    /* background: url(../img/abstract.jpg);
-    background-repeat: no-repeat;
-    background-size: cover; */
-    /* background-color: #ffffff80; */
+    background-color: #11111199;
+    will-change: transform;
     width: 100%;
     height: 100%;
     top:0;
     right:0;
-    z-index: -1;
-}
+    z-index: 4;
+} */
 
-#landing::after {
+/* #landing::after {
     content: "";
-			position: absolute;    
-			background-image: url(../img/wave-bot.png);   
-			background-position: left center;
-			background-repeat: no-repeat;
-            background-size: 100% 100%;
-			left: 0;
-            bottom: 0;
-            width: 100%;
-            height: 100%;
-}
+    position: absolute;    
+    background-image: url(../img/ssn.png);   
+    background-repeat: no-repeat;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+} */
 
 
 .landing-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width: 90%;
-    height: 50%;
+    width: 100%;
     z-index: 1;
+    min-height: 100vh;
     /* background-color: blue; */
 }
 
+.landing-container > * {
+    z-index: 5;
+}
+
+.landing-container::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/bg-cyber3.png);   
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#landing .container-fluid {
+    padding: 0;
+}
+
 .name-container {
+    margin-left: 20px;
+    padding: 15px;
     width: auto;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: center;
+}
+
+.landing-button-container {
+    width: 100%;
+    margin-left: 35px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.landing-button {
+    text-decoration: none;
+    border: none;
+    outline: none;
+    padding: 10px 60px;
+    cursor: pointer;
+    background-color: rgb(218, 84, 84);
+    /* border: 2px solid #f37d89; */
+    color: #fff;
+    font-weight: bolder;
+    border-radius: 2px;
+    -webkit-animation: scale 3s ease-in-out infinite alternate;
+    -moz-animation: scale 3s ease-in-out infinite alternate;
+    animation: scale 3s ease-in-out infinite alternate;
+    border: 1px solid transparent;
+}
+
+.landing-button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.landing-button:focus {
+    outline: none;
+    border: 1px solid #f37d89;
 }
 
 
 .name {
-    font-family: 'Nixie One', cursive;
-    text-transform: uppercase;
     font-weight: 800;
-    color: white;
-    font-size: 3rem;
-    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
-    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
-    animation: neon1 1.5s ease-in-out infinite alternate;
-    text-align: left;
+    color: #fff;
+    font-size: 2.4rem;
+    text-shadow: 1px 1px #000;
 }
 
 .name::after {
@@ -180,7 +227,8 @@ nav:hover {
     font-size: 1.5rem;
     /* font-family: 'Monoton', cursive; */
     font-family: sans-serif;
-    color: white;
+    color: #fff;
+    text-shadow: 1px 1px #000;
 }
 
 
@@ -405,7 +453,8 @@ nav:hover {
 
 
 .about-description .line {
-    border: 2px solid #ecc99b;
+    height: 2px;
+    background-color: #ecc99b;
     margin-top: 120px;
 }
 
@@ -479,6 +528,10 @@ nav:hover {
 .about-description .about-links li a i:hover {
     background-color: #ecc99b;
     color: #2D2D2D;
+}
+
+.about-description .about-links li a:hover {
+    text-decoration: none;
 }
 
 .about-me .about-photo {
@@ -1100,11 +1153,6 @@ textarea {
     .about-description .par-2 {
         margin-top: 20px;
     }
-
-    #landing {
-        min-height: 600px;
-    }
-
     
     #projects,
     #skills,
@@ -1169,8 +1217,30 @@ textarea {
         font-size: 10px;
     }
 
-    #landing {
-        min-height: 350px;
+    nav {
+        font-size: 12px;
+    }
+
+    .logo-nav {
+        width: 30px;
+        height: 30px;
+    }
+
+    .landing-button-container {
+        margin-left: 15px;
+    }
+
+    .landing-container::after {
+        background-image: url(../img/bg-cyber-mobile-1.png); 
+    }
+
+    .landing-button {
+        padding: 5px 15px;
+    }
+
+    .name-container {
+        margin-left: 0;
+        padding-bottom: 5px;
     }
 
     #projects,
